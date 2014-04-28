@@ -1,0 +1,216 @@
+{
+    "patterns": [
+        {
+          "name": "statement.leaf.yang",
+          "match": "(leaf) ([a-zA-z0-9\\-_]+)",
+          "captures": {
+            "1": { "name": "storage.type"},
+            "2": { "name": "variable.parameter"}
+          },
+          "comment": "leaf keyword"
+        },
+        {
+          "name": "statement.leaf-list.yang",
+          "match": "(leaf-list) ([a-zA-z0-9\\-_]+)",
+          "captures": {
+            "1": { "name": "storage.type"},
+            "2": { "name": "variable.parameter"}
+          },
+          "comment": "leaf-list keyword"
+        },
+        {
+          "name": "statement.list.yang",
+          "match": "(list) ([a-zA-z0-9\\-]+)",
+          "captures": {
+            "1": { "name": "storage.type"},
+            "2": { "name": "variable.parameter"}
+          },
+          "comment": "list keyword"
+        },
+        {
+          "name": "statement.key.yang",
+          "match": "(key) ([a-zA-z0-9\\-]+)",
+          "captures": {
+            "1": { "name": "constant.language"},
+            "2": { "name": "constant.character"}
+          },
+          "comment": "key keyword"
+        },
+        {
+          "name": "statement.choice.yang",
+          "match": "(choice) ([a-zA-z0-9\\-_]+)",
+          "captures": {
+            "1": { "name": "storage.type"},
+            "2": { "name": "variable.parameter"}
+          },
+          "comment": "choice keyword"
+        },
+        {
+          "name": "statement.container.yang",
+          "match": "(container) ([a-zA-z0-9\\-_]+)",
+          "captures": {
+            "1": { "name": "storage.type"},
+            "2": { "name": "variable.parameter"}
+          },
+          "comment": "container keyword"
+        },
+        {
+          "name": "statement.grouping.yang",
+          "match": "(grouping) ([a-zA-z0-9\\-_]+)",
+          "captures": {
+            "1": { "name": "constant.language"},
+            "2": { "name": "entity.name.type.class"}
+          },
+          "comment": "grouping keyword"
+        },
+        {
+          "name": "statement.uses.yang",
+          "match": "(uses) ([a-zA-z0-9\\-_:]+)",
+          "captures": {
+            "1": { "name": "constant.language"},
+            "2": { "name": "entity.name.type.class"}
+          },
+          "comment": "uses keyword"
+        },
+        {
+          "name": "statement.type.yang",
+          "match": "(type) +([a-zA-Z0-9;:\\-_]+)",
+          "captures": {
+            "1": { "name": "constant.language"},
+            "2": { "name": "constant.character"}
+          },
+          "comment": "type keyword"
+        },
+        {
+          "name": "statement.type.enum.yang",
+          "match": "(enum) +([\\\"a-zA-Z0-9\\-_: ]+)",
+          "captures": {
+            "1": { "name": "constant.character"},
+            "2": { "name": "string.quoted.double"}
+          },
+          "comment": "enum keyword"
+        },
+        {
+          "name": "comment.yang",
+          "match": "(//.*$)",
+          "captures": {
+            "1": { "name": "comment"}
+          },
+          "comment": "comments"
+        },
+        {
+          "name": "module.yang",
+          "match": "(module) +([a-zA-Z0-9;:\\-_]+)",
+          "captures": {
+            "1": { "name": "string.regexp"},
+            "2": { "name": "entity.name.type.class"}
+          },
+          "comment": "comments"
+        },
+        {
+          "name": "import.yang",
+          "match": "(import) +([a-zA-Z0-9;:\\-_]+)",
+          "captures": {
+            "1": { "name": "string.regexp"},
+            "2": { "name": "entity.name.type.class"}
+          },
+          "comment": "comments"
+        },
+        {
+          "name": "import.prefix.yang",
+          "match": "(prefix) ([a-zA-z0-9\\-_]+)",
+          "captures": {
+            "1": { "name": "constant.language"},
+            "2": { "name": "entity.name.type.class"}
+          },
+          "comment": "grouping keyword"
+        },
+        {
+          "name": "revision.yang",
+          "match": "(revision) +([a-zA-Z0-9;:\\-_]+)",
+          "captures": {
+            "1": { "name": "string.regexp"},
+            "2": { "name": "entity.name.type.class"}
+          },
+          "comment": "comments"
+        },
+        {
+          "name": "namespace.yang",
+          "match": "(namespace)",
+          "captures": {
+            "1": { "name": "constant.language"}
+          },
+          "comment": "grouping keyword"
+        },
+        {
+          "name": "organization.yang",
+          "match": "(organization)",
+          "captures": {
+            "1": { "name": "constant.language"}
+          },
+          "comment": "grouping keyword"
+        },
+        {
+          "name": "contact.yang",
+          "match": "(contact)",
+          "captures": {
+            "1": { "name": "constant.language"}
+          },
+          "comment": "grouping keyword"
+        },
+        {
+          "name": "description.yang",
+          "match": "(description)",
+          "captures": {
+            "1": { "name": "constant.language"}
+          },
+          "comment": "description keyword"
+        },
+        {
+          "name": "statement.typedef.yang",
+          "match": "(typedef) ([a-zA-z0-9\\-_]+)",
+          "captures": {
+            "1": { "name": "constant.language"},
+            "2": { "name": "constant.character"}
+          },
+          "comment": "typedef keyword"
+        },
+        {
+          "name": "statement.pattern.yang",
+          "match": "(pattern)",
+          "captures": {
+            "1": { "name": "storage.type"}
+          },
+          "comment": "pattern keyword"
+        },
+        {
+          "name": "statement.augment.yang",
+          "match": "(augment) ([\\\":/a-zA-z0-9\\-_]+)",
+          "captures": {
+            "1": { "name": "constant.language"},
+            "2": { "name": "entity.name.type.class"}
+          },
+          "comment": "augment keyword"
+        },
+        {
+          "name": "string.quoted.yang",
+          "begin": "([\\\"\\'])",
+          "beginCaptures": {
+            "1": { "name": "punctuation.definition.string.begin" }
+          },
+          "end": "([\\\"\\'];)",
+          "endCaptures": {
+            "1": { "name": "punctuation.definition.string.end"}
+          },
+          "patterns": [
+            { "match": ".",
+              "name": "string.quoted.double"
+            }
+          ]
+        }
+    ],
+    "name": "YANG",
+    "scopeName": "source.yang",
+    "fileTypes": ["yang"],
+    "uuid": "9ef30d21-cb3f-4665-b28e-23175f3c3376"
+}

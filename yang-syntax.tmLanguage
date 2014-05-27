@@ -16,216 +16,6 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>leaf keyword</string>
-			<key>match</key>
-			<string>(leaf) ([a-zA-z0-9\-_]+)</string>
-			<key>name</key>
-			<string>statement.leaf.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>leaf-list keyword</string>
-			<key>match</key>
-			<string>(leaf-list) ([a-zA-z0-9\-_]+)</string>
-			<key>name</key>
-			<string>statement.leaf-list.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>list keyword</string>
-			<key>match</key>
-			<string>(list) ([a-zA-z0-9\-]+)</string>
-			<key>name</key>
-			<string>statement.list.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>constant.character</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>key keyword</string>
-			<key>match</key>
-			<string>(key) ([a-zA-z0-9\-]+)</string>
-			<key>name</key>
-			<string>statement.key.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>choice keyword</string>
-			<key>match</key>
-			<string>(choice) ([a-zA-z0-9\-_]+)</string>
-			<key>name</key>
-			<string>statement.choice.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>variable.parameter</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>container keyword</string>
-			<key>match</key>
-			<string>(container) ([a-zA-z0-9\-_]+)</string>
-			<key>name</key>
-			<string>statement.container.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.class</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>grouping keyword</string>
-			<key>match</key>
-			<string>(grouping) ([a-zA-z0-9\-_]+)</string>
-			<key>name</key>
-			<string>statement.grouping.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.class</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>uses keyword</string>
-			<key>match</key>
-			<string>(uses) ([a-zA-z0-9\-_:]+)</string>
-			<key>name</key>
-			<string>statement.uses.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>constant.character</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>type keyword</string>
-			<key>match</key>
-			<string>(type) +([a-zA-Z0-9;:\-_]+)</string>
-			<key>name</key>
-			<string>statement.type.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.character</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>string.quoted.double</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>enum keyword</string>
-			<key>match</key>
-			<string>(enum) +([\"a-zA-Z0-9\-_: ]+)</string>
-			<key>name</key>
-			<string>statement.type.enum.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
 					<string>comment</string>
 				</dict>
 			</dict>
@@ -242,9 +32,14 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>string.regexp</string>
+					<string>entity.name.function</string>
 				</dict>
 				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language</string>
+				</dict>
+				<key>3</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.type.class</string>
@@ -253,194 +48,9 @@
 			<key>comment</key>
 			<string>comments</string>
 			<key>match</key>
-			<string>(module) +([a-zA-Z0-9;:\-_]+)</string>
+			<string>(\s*(module|container|grouping|leaf|leaf-list|list|choice|revision|rpc|typedef|augment) +([a-zA-Z0-9;:\-_]+))\s*\{</string>
 			<key>name</key>
-			<string>module.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>string.regexp</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.class</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>comments</string>
-			<key>match</key>
-			<string>(import) +([a-zA-Z0-9;:\-_]+)</string>
-			<key>name</key>
-			<string>import.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.class</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>grouping keyword</string>
-			<key>match</key>
-			<string>(prefix) ([a-zA-z0-9\-_]+)</string>
-			<key>name</key>
-			<string>import.prefix.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>string.regexp</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.class</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>comments</string>
-			<key>match</key>
-			<string>(revision) +([a-zA-Z0-9;:\-_]+)</string>
-			<key>name</key>
-			<string>revision.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>grouping keyword</string>
-			<key>match</key>
-			<string>(namespace)</string>
-			<key>name</key>
-			<string>namespace.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>grouping keyword</string>
-			<key>match</key>
-			<string>(organization)</string>
-			<key>name</key>
-			<string>organization.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>grouping keyword</string>
-			<key>match</key>
-			<string>(contact)</string>
-			<key>name</key>
-			<string>contact.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>description keyword</string>
-			<key>match</key>
-			<string>(description)</string>
-			<key>name</key>
-			<string>description.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>constant.character</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>typedef keyword</string>
-			<key>match</key>
-			<string>(typedef) ([a-zA-z0-9\-_]+)</string>
-			<key>name</key>
-			<string>statement.typedef.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>storage.type</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>pattern keyword</string>
-			<key>match</key>
-			<string>(pattern)</string>
-			<key>name</key>
-			<string>statement.pattern.yang</string>
-		</dict>
-		<dict>
-			<key>captures</key>
-			<dict>
-				<key>1</key>
-				<dict>
-					<key>name</key>
-					<string>constant.language</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.class</string>
-				</dict>
-			</dict>
-			<key>comment</key>
-			<string>augment keyword</string>
-			<key>match</key>
-			<string>(augment) ([\":/a-zA-z0-9\-_]+)</string>
-			<key>name</key>
-			<string>statement.augment.yang</string>
+			<string>block.yang</string>
 		</dict>
 		<dict>
 			<key>begin</key>
@@ -474,6 +84,30 @@
 					<string>string.quoted.double</string>
 				</dict>
 			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)\b(
+				anyxml|argument|augment|base|belongs-to|bit|case|choise|config|contact|
+				container|default|description|deviate|deviation|enum|error-app-tag|
+				error-message|extension|feature|fraction-digits|grouping|identity|if-feature|
+				import|include|input|key|leaf|leaf-list|length|list|mandatory|module|must|
+				namespace|notification|ordered-by|organization|output|path|pattern|position|
+				prefix|presence|range|reference|refine|require-instance|revision|
+				revision-date|rpc|status|submodule|type|typedef|unique|units|uses|value|when|
+				yang-version|yin-element
+			)\b</string>
+			<key>name</key>
+			<string>support.function.builtin.yang</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?x)\b(
+				binary|bits|boolean|decimal64|empty|enumeration|identityref|instance-identifier|
+				int8|int16|int32|int64|leafref|string|uint8|uint16|uint32|uint64|union
+			)\b</string>
+			<key>name</key>
+			<string>storage.type.yang</string>
 		</dict>
 	</array>
 	<key>scopeName</key>

@@ -16,9 +16,14 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>storage.type</string>
+					<string>entity.name.function</string>
 				</dict>
 				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>storage.type</string>
+				</dict>
+				<key>3</key>
 				<dict>
 					<key>name</key>
 					<string>variable.parameter</string>
@@ -27,7 +32,7 @@
 			<key>comment</key>
 			<string>leaf keyword</string>
 			<key>match</key>
-			<string>(leaf) ([a-zA-z0-9\-_]+)</string>
+			<string>(\s+(leaf) ([a-zA-z0-9\-_]+))\s+\{</string>
 			<key>name</key>
 			<string>statement.leaf.yang</string>
 		</dict>
@@ -142,9 +147,14 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>constant.language</string>
+					<string>entity.name.function</string>
 				</dict>
 				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>constant.language</string>
+				</dict>
+				<key>3</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.type.class</string>
@@ -153,7 +163,7 @@
 			<key>comment</key>
 			<string>grouping keyword</string>
 			<key>match</key>
-			<string>(grouping) ([a-zA-z0-9\-_]+)</string>
+			<string>(\s+(grouping) ([a-zA-z0-9\-_]+))\s+\{</string>
 			<key>name</key>
 			<string>statement.grouping.yang</string>
 		</dict>
@@ -164,11 +174,6 @@
 				<dict>
 					<key>name</key>
 					<string>constant.language</string>
-				</dict>
-				<key>2</key>
-				<dict>
-					<key>name</key>
-					<string>entity.name.type.class</string>
 				</dict>
 			</dict>
 			<key>comment</key>
@@ -242,9 +247,14 @@
 				<key>1</key>
 				<dict>
 					<key>name</key>
-					<string>string.regexp</string>
+					<string>entity.name.type.class</string>
 				</dict>
 				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>string.regexp</string>
+				</dict>
+				<key>3</key>
 				<dict>
 					<key>name</key>
 					<string>entity.name.type.class</string>
@@ -253,7 +263,7 @@
 			<key>comment</key>
 			<string>comments</string>
 			<key>match</key>
-			<string>(module) +([a-zA-Z0-9;:\-_]+)</string>
+			<string>((module) +([a-zA-Z0-9;:\-_]+))\s+\{</string>
 			<key>name</key>
 			<string>module.yang</string>
 		</dict>
